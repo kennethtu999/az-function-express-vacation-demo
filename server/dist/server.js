@@ -16,7 +16,7 @@ function start() {
     else {
         captains.log('Using ENV variables');
     }
-    const app = (0, express_1.default)();
+    const app = express_1.default();
     const port = process.env.PORT || 7070;
     const www = process.env.WWW || './';
     app.use(body_parser_1.default.json());
