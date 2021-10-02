@@ -2,8 +2,8 @@
   "name": "shifting-express-to-functions",
   "version": "0.0.0",
   "scripts": {
-    "local:build": "tsc -p server",
-    "local:watch": "tsc -w -p server",
+    "build": "tsc -p server",
+    "watch": "tsc -w -p server",
     "node:lint": "npm run node:build-ts && eslint \"server/**/*.ts\" --quiet --fix",
     "node:debug": "WWW=./dist/vacationwishlist nodemon -r dotenv/config --inspect=9229 server/dist/index.js",
     "node:start": "WWW=./dist/vacationwishlist node -r dotenv/config server/dist/index.js"
