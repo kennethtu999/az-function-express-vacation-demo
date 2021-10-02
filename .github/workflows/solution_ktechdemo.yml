@@ -30,8 +30,8 @@ jobs:
         run: |
           pushd './${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}'
           npm install
-          node:build-ts --if-present
-          npm run test-ts --if-present
+          npm run node:build-ts-ignore --if-present
+          npm run test-ignore --if-present
           popd
 
       - name: 'Run Azure Functions Action'
