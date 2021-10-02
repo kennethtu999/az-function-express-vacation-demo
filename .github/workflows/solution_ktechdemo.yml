@@ -30,8 +30,8 @@ jobs:
         run: |
           pushd './${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}'
           npm install
-          npm run node:build-ts-ignore --if-present
-          npm run test-ignore --if-present
+          npm run build --if-present
+          npm run test --if-present
           popd
 
       - name: 'Run Azure Functions Action'
@@ -41,4 +41,4 @@ jobs:
           app-name: 'ktechdemo'
           slot-name: 'Production'
           package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A7DE867C31484223955CCD509B4BBE3A }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A7D1F71F8FD742089E50519FBEE8BEB6 }}
