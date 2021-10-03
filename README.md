@@ -1,3 +1,7 @@
+# TBD
+- https://github.com/Azure/functions-action/issues/39
+- https://github.com/maximivanov/azure-functions-cd-github-actions/blob/dev/.github/workflows/cd.yml
+
 # Shifting Node.js Express to Azure Functions
 
 TypeScript Node/Express 👉TypeScript Serverless ➕ Angular
